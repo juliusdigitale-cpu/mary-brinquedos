@@ -1,3 +1,4 @@
+import foto00 from './imagens/foto00.jpeg';
 import foto01 from './imagens/foto01.jpeg';
 import foto02 from './imagens/foto02.jpeg';
 import foto03 from './imagens/foto03.jpeg';
@@ -33,11 +34,14 @@ function App() {
   return (
     <div className="page-shell">
       <header className="hero">
+        <div className="hero-image">
+          <img src={foto00} alt="Mary's Brinq" className="hero-logo" />
+        </div>
         <div className="hero-copy">
           <p className="eyebrow">Mary's Brinq</p>
           <h1>Locação de brinquedos, mesas e cadeiras para sua festa</h1>
           <p className="hero-text">
-            De Santos a São Bernardo do Campo, oferecemos soluções completas e personalizadas para festas infantis.
+            Em São Bernardo do Campo, oferecemos soluções completas para festas infantis.
             Agende seu evento com rapidez e confiança.
           </p>
           <div className="hero-actions">
@@ -92,7 +96,7 @@ function App() {
       <footer className="page-footer">
         <div>
           <p className="footer-title">Mary's Brinq</p>
-          <p>Locação de brinquedos, mesas e cadeiras para festas infantis em SBC e região.</p>
+          <p>Locação de brinquedos, mesas e cadeiras para festas infantis em SBC.</p>
         </div>
       </footer>
     </div>
