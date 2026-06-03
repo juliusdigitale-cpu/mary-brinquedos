@@ -1,0 +1,263 @@
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8f6ff;
+  color: #1d1a34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f0ebf8 0%, #e8dff6 25%, #ddd0f0 50%, #d4c5eb 75%, #e5daf1 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  color: #6633ff;
+  font-size: 0.85rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.02;
+}
+
+.hero-text {
+  max-width: 680px;
+  line-height: 1.75;
+  color: #4a4767;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #6d45ff;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(109, 69, 255, 0.3);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background: #5a38e0;
+  box-shadow: 0 8px 24px rgba(109, 69, 255, 0.5);
+}
+
+.button {
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: #6d45ff;
+  color: white;
+  box-shadow: 0 18px 40px rgba(109, 69, 255, 0.16);
+}
+
+.secondary {
+  background: rgba(109, 69, 255, 0.08);
+  color: #4b40a5;
+}
+
+.hero-card {
+  background: #fff;
+  border: 1px solid rgba(113, 57, 255, 0.12);
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: 0 26px 60px rgba(51, 30, 117, 0.08);
+}
+
+.card-content h2 {
+  margin: 0 0 16px;
+  font-size: 1.85rem;
+}
+
+.card-content p {
+  margin: 0;
+  line-height: 1.75;
+  color: #5f5a7d;
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #7e6fff;
+}
+
+.info-section,
+.gallery-section {
+  margin-bottom: 48px;
+}
+
+.info-section h2,
+.gallery-section h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.info-section p {
+  color: #555074;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.service-card {
+  background: #fbf7ff;
+  border: 1px solid rgba(109, 69, 255, 0.11);
+  border-radius: 24px;
+  padding: 26px;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 24px;
+  min-height: 180px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba(112, 86, 255, 0.14);
+}
+
+.footer-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 920px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 660px) {
+  .page-shell {
+    padding: 18px 16px 32px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
