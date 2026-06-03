@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juliusdigitale-cpu.github.io/mary-brinquedos/sitemap.xml
