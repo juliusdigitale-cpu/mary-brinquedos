@@ -15,7 +15,7 @@ const gallery = [
   { src: foto01, alt: 'Decoração de festa infantil 1' },
   { src: foto02, alt: 'Mesa e cadeira para festa' },
   { src: foto03, alt: 'Brinquedos para locação' },
-  { src: foto08, alt: 'Ambientação divertida' }
+  { src: foto04, alt: 'Ambientação divertida' }
 ];
 
 const InstagramIcon = () => (

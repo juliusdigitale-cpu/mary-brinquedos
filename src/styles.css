@@ -50,14 +50,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
+  padding: 18px;
+  border-radius: 22px;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.15);
 }
 
 .hero-logo {
-  max-width: 360px;
+  max-width: 340px;
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  border-radius: 18px;
+  box-shadow: none;
 }
 
 .hero-copy {
