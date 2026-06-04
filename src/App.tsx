@@ -1,8 +1,8 @@
-import foto00 from './imagens/foto00.jpeg';
 import foto01 from './imagens/foto01.jpeg';
 import foto02 from './imagens/foto02.jpeg';
 import foto03 from './imagens/foto03.jpeg';
 import foto04 from './imagens/foto04.jpeg';
+import foto08 from './imagens/foto08.jpeg';
 
 const services = [
   'Locação de brinquedos infláveis',
@@ -15,7 +15,7 @@ const gallery = [
   { src: foto01, alt: 'Decoração de festa infantil 1' },
   { src: foto02, alt: 'Mesa e cadeira para festa' },
   { src: foto03, alt: 'Brinquedos para locação' },
-  { src: foto04, alt: 'Ambientação divertida' }
+  { src: foto08, alt: 'Ambientação divertida' }
 ];
 
 const InstagramIcon = () => (
@@ -35,7 +35,7 @@ function App() {
     <div className="page-shell">
       <header className="hero">
         <div className="hero-image">
-          <img src={foto00} alt="Mary's Brinq" className="hero-logo" />
+          <img src={foto08} alt="Mary's Brinq" className="hero-logo" />
         </div>
         <div className="hero-copy">
           <p className="eyebrow">Mary's Brinq</p>

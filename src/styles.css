@@ -10,15 +10,14 @@
 }
 
 html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
-  /* Gradiente ajustado: um roxo profissional, um pouco mais claro que o anterior */
-  background: linear-gradient(135deg, #6e4bd6 0%, #5a2e7a 40%, #3e1f5a 100%);
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-  margin: 0;
-  background: linear-gradient(135deg, #f2eafc 0%, #e0d3fb 25%, #cdbaf8 50%, #9a6ef0 75%, #5a2e7a 100%);
+  background: linear-gradient(135deg, #f6f3ff 0%, #ece7ff 25%, #dfd3ff 50%, #d0c1ff 75%, #b7a1ff 100%);
   background-attachment: fixed;
   min-height: 100vh;
 }
